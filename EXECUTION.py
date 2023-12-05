@@ -18,17 +18,17 @@ class ImportAndManipulateData:
         self.a, self.b, self.c = analyze_data(dataframe)
 
         print(dataframe)
-        print('Percentage of elite players: {}%'.format(self.a))
-        print('Percentage of good players: {}%'.format(self.b))
-        print('Percentage of average players: {}%'.format(self.c))
+        print('A. Percentage of elite  players: {}%'.format(self.a))
+        print('B. Percentage of solid  players: {}%'.format(self.b))
+        print('C. Percentage of casual players: {}%'.format(self.c))
 
 
-root = 'D:/Career Track 1 - DATA ENGINEER/SOFTWARE. JetBrains PyCharm/PROJ1 - Writing Functions for Product Analysis/data'
+root = '/home/taetaetae/Documents/Career Track 1 - DATA ENGINEER/UTILITY. Project/PROJ 3 - Writing Functions for Product Analysis/data'
 
-gk_csv = f'{root}/goalkeeper.csv'
-df_csv = f'{root}/defender.csv'
-mf_csv = f'{root}/midfielder.csv'
-at_csv = f'{root}/attacker.csv'
+gk_csv = f'{root}/best_GK.csv'
+df_csv = f'{root}/best_DF.csv'
+mf_csv = f'{root}/best_MF.csv'
+at_csv = f'{root}/best_AT.csv'
 
 obj = ImportAndManipulateData(gk_csv, df_csv, mf_csv, at_csv)
 obj.execute()
