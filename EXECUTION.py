@@ -23,7 +23,7 @@ class ImportAndManipulateData:
         print('C. Percentage of casual players: {}%'.format(self.c))
 
 
-root = '/home/taetaetae/Documents/Career Track 1 - DATA ENGINEER/UTILITY. Project/PROJ 3 - Writing Functions for Product Analysis/data'
+root = '/home/tae/PycharmProjects/prj1-Writing-Function-to-Import-and-Manipulate-Data/data'
 
 gk_csv = f'{root}/best_GK.csv'
 df_csv = f'{root}/best_DF.csv'
